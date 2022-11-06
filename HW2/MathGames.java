@@ -46,10 +46,100 @@ public class MathGames {
      public static void main(String[] args){
         System.out.println("Hello World");
         
-        
-    }
+
+       
+     }
+
 
 
 
 
 }
+
+
+
+
+/*                                      PATHAGARUS SOLVED
+ * 
+int n1 = 7;
+double n1Squared = numberSquared(n1);
+System.out.println(numberSquared(n1));
+int n2 = 5;
+double n2Squared = numberSquared(n2);
+System.out.println(numberSquared(n2));
+double squaresAdded = n1Squared + n2Squared;
+System.out.println(squareRoot(squaresAdded));
+ * 
+ * ----------------------------------------------------------PUT THIS OUTSIDE THE MAIN METHOD
+ * 
+ * public static double numberSquared(int number) {
+    
+    double sum = Math.pow(number, 2);
+    return sum;
+
+}
+
+
+public static double squareRoot(double squaresAdded) {
+    
+    double hypotenuse = Math.sqrt(squaresAdded);
+
+    return hypotenuse;
+
+   }
+ * 
+ * 
+ * 
+ * 
+ *                                  GRADES SOLVED
+ * 
+ * 
+ *  double input = 69.3;
+        double output = Math.ceil(finalGrade(input));
+        System.out.println(output);
+ * 
+ * 
+ * ------------------------------------------------------PUT THIS OUTSIDE MAIN METHOD
+ * 
+ * 
+ * public static double finalGrade(double input) {
+    
+    if (input < 60) {
+            System.out.println("you got an F");
+        } else if (input < 69) {
+            System.out.println("you got a D");
+        } else if (input < 79) {
+            System.out.println("you got a C");
+        } else if (input < 89) {
+            System.out.println("you got a B");
+        } else if (input < 100) {
+            System.out.println("you got a A");
+        }
+
+        return input;
+
+}
+ * 
+ * 
+ * 
+ *                                          TIPS SOLVED
+ * 
+ * 
+ *    double total = 100;
+        double numberOfPeople = 5;
+        double tipPercentage = .20;
+        System.out.println(Math.ceil(individualPayment(total, numberOfPeople, tipPercentage)));
+
+
+-------------------------------------------------------PUT THIS OUSIDE THE MAIN METHOD
+
+     public static double individualPayment(double total, double numberOfPeople, double tipPercentage) {
+      
+        double amountPerPersonSpent = (total/numberOfPeople);
+        double tipPerPerson = (amountPerPersonSpent*tipPercentage);
+        return tipPerPerson;
+
+     }
+ * 
+ * 
+ */
